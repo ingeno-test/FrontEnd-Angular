@@ -1,0 +1,21 @@
+<h2>Liste des voitures</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>marque</th>
+            <th>couleur</th>
+            <th>puissance</th>
+            <th>année</th>
+            <th>kilometrage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let voiture of voitures">
+            <td>{{voiture.marque}}</td>
+            <td>{{voiture.couleur}}</td>
+            <td>{{voiture.puissance}} CV</td>
+            <td>{{voiture.annee}}</td>
+            <td>{{voiture.kilometrage}} KM</td>
+        </tr>
+    </tbody>
+</table>
