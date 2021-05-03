@@ -4,8 +4,8 @@ import { Routes, RouterModule } from "@angular/router";
 import { VoitureListComponent } from "./voiture-list/voiture-list.component";
 
 const routes: Routes = [
-    {path: 'voitues', component: VoitureListComponent},
-    {path: '', redirectTo: 'voitures', pathMatch: 'full'}
+    {path: 'voitures', component: VoitureListComponent},
+    {path: '', redirectTo: '/voitures', pathMatch: 'full'}
 ];
 
 @NgModule({
