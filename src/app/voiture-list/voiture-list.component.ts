@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Voiture } from '../model/voiture';
+import { VoitureService } from '../service/voiture.service';
 
 @Component({
   selector: 'app-voiture-list',
@@ -10,19 +11,16 @@ export class VoitureListComponent implements OnInit {
 
   voitures: Voiture[];
 
-  constructor() { }
+  constructor(private voitureService: VoitureService) { }
 
   ngOnInit(): void {
-    this.voitures = [
-      {
-        "id":1,
-        "marque":"toyota",
-        "couleur":"noir",
-        "puissance":100,
-        "annee":2002,
-        "kilometrage":1553
-     }
-  ];
+    this.getVoitures();
+  }
+
+  private getVoitures(){
+    this.voitureService.getVoituresList().subscribe(data => {
+      this.voitures = data;
+    });
   }
 
 }
