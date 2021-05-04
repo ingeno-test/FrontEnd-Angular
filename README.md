@@ -2,6 +2,8 @@
 
 Projet frontend avec angular 11.
 
+![SPA-ANGULAR](https://github.com/ingeno-test/FrontEnd-Angular/blob/master/screenshot.png.jpg)
+
 # Installation
 #### 1-cloner le repository
 #### 2-telecharger les dépendances
