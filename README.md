@@ -12,7 +12,8 @@ Projet frontend avec angular 11.
 
 #Outils Utilisés
 #### 1-VS code
-#### 2-Google chrome
+#### 2-NodeJS
+#### 3-Google chrome
 
 
 
