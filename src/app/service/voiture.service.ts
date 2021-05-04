@@ -18,4 +18,17 @@ export class VoitureService {
   createVoiture(voiture: Voiture): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}`, voiture)
   }
+  
+
+  getVoitureById(id: number): Observable<Voiture>{
+    return this.httpClient.get<Voiture>(`${this.baseURL}/${id}`)
+  }
+
+  updateVoiture(id: number, voiture: Voiture): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${id}`, voiture)
+  }
+
+  deleteVoiture(id: number): Observable<Object>{
+    return this.httpClient.delete(`${this.baseURL}/${id}`);
+  }
 }

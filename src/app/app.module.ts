@@ -13,7 +13,7 @@ import { UpdateVoitureComponent } from './update-voiture/update-voiture.componen
     AppComponent,
     VoitureListComponent,
     CreateVoitureComponent,
-    UpdateVoitureComponent
+    UpdateVoitureComponent,
   ],
   imports: [
     BrowserModule,

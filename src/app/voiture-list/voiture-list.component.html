@@ -7,6 +7,7 @@
             <th>puissance</th>
             <th>année</th>
             <th>kilometrage</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -16,6 +17,12 @@
             <td>{{voiture.puissance}} CV</td>
             <td>{{voiture.annee}}</td>
             <td>{{voiture.kilometrage}} KM</td>
+            <td>
+                <button (click)="updateVoiture(voiture.id)" class="btn btn-info">modifier</button>
+            </td>
+            <td>
+                <button (click)="deleteVoiture(voiture.id)" class="btn btn-danger">supprimer</button>
+            </td>
         </tr>
     </tbody>
 </table>
